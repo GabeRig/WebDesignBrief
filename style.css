@@ -16,7 +16,7 @@ img{
 }
 
 
-#image-track>.button>.image {
+#image-track>.image {
     width: 35vmin;
     height: 50vmin;
     object-fit: none;

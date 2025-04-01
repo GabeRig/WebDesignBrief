@@ -46,7 +46,7 @@ window.onmousemove = e => {
     }, { duration: 2000, fill: "forwards" });
 
     // Apply translation to individual images
-    for ( const image of track.getElementsByClassName( "button" ) ) { //TODO: "button" to "image" restores parralax but breaks image to button placement
+    for ( const image of track.getElementsByClassName( "image" ) ) { //TODO: "button" to "image" restores parralax but breaks image to button placement
         image.animate(
             {
                 transform: `translateX(${3 * nextPercentage}%)`,
@@ -87,7 +87,7 @@ function scrollTrack(scrollDir) {
     }, { duration: 2000, fill: "forwards" });
 
     // Apply translation to individual images
-    for ( const image of track.getElementsByClassName( "button" ) ) { //TODO: "button" to "image" restores parralax but breaks image to button placement
+    for ( const image of track.getElementsByClassName( "image" ) ) { //TODO: "button" to "image" restores parralax but breaks image to button placement
         image.animate(
             {
                 transform: `translateX(${3 * nextPercentage}%)`,
