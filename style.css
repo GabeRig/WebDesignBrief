@@ -16,22 +16,23 @@ img{
 }
 
 
-#image-track>.image {
+#image-track>.trackHref>.trackImage {
     width: 35vmin;
     height: 50vmin;
     object-fit: none;
     object-position: 100% 50%;
-}
-
-#image-track>.button {
-    width: 35vmin;
-    height: 50vmin;
-    object-fit: none;
-    object-position: 100% 50%;
-    background-color: #f7efef;
-    border: none;
     cursor: pointer;
 }
+
+#image-track>.trackHref {
+    width: 35vmin;
+    height: 50vmin;
+    object-fit: none;
+    object-position: 100% 50%;
+
+    cursor: default;
+}
+
 
 #image-track {
     display: flex;
