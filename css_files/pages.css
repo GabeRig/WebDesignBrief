@@ -8,6 +8,21 @@ body {
     overflow: hidden;
 }
 
+
+#home-button {
+    margin: 35px;
+    height: 72px;
+    width: 72px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 14px;
+}
+
+#home-button>.homeHref {
+    
+    background-color: black;
+}
+
+
 #page-select-container{
     display: flex;
     justify-content: flex-end;
@@ -17,7 +32,7 @@ body {
     width: 955px;
     height: 150px;
     
-    background-color: rgba(0, 0, 0, 0.27);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 60px;
     
     display: flex;
