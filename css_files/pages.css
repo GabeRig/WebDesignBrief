@@ -5,25 +5,46 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: #131313;
-    overflow: hidden;
+    overflow: auto;
 }
 
 
 #home-button {
-    margin: 35px;
+    position: fixed;
+    top: 15px;
+    left: 15px;
     height: 72px;
     width: 72px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 14px;
+
+    &:hover {
+     
+        filter: brightness(130%);
+        -webkit-filter: brightness(130%);
+        -moz-filter: brightness(130%);
+        -o-filter: brightness(130%);
+        -ms-filter: brightness(130%);
+
+    }
 }
 
-#home-button>.homeHref {
+#home-href {
     
     background-color: black;
 }
 
+#home-icon {
+    
+    height: 72px;
+    width: 72px;
+}
+
 
 #page-select-container{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
     display: flex;
     justify-content: flex-end;
 }
@@ -32,15 +53,17 @@ body {
     width: 955px;
     height: 150px;
     
+    
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 60px;
     
     display: flex;
     justify-content: flex-end;
+    z-index: 3000;
     
 }
 
-#links {
+.links {
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 15px;
@@ -49,22 +72,33 @@ body {
     height: 100px;
 }
 
-#links>.linkHref>.containerImage{
+.containerImage{
     width: 100px;
     height: 100px;
     object-fit: cover;
     border-radius: 35px;
     object-position: 100% 50%;
     cursor: pointer;
+
+    &:hover {
+     
+        filter: brightness(130%);
+        -webkit-filter: brightness(130%);
+        -moz-filter: brightness(130%);
+        -o-filter: brightness(130%);
+        -ms-filter: brightness(130%);
+
+    }
+
 }
 
-#links>.linkHref>.darkenedImage{
+.darkenedImage{
     width: 100px;
     height: 100px;
     object-fit: cover;
     border-radius: 35px;
     object-position: 100% 50%;
-    cursor: pointer;
+    cursor: default;
     
-    filter: brightness(50%);
+    filter: brightness(75%);
 }
