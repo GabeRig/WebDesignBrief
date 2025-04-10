@@ -6,6 +6,9 @@ body {
     width: 100vw;
     background-color: #131313;
     overflow: auto;
+
+    color: #ffff;
+    font-family: 'Poppins', sans-serif; 
 }
 
 
@@ -101,4 +104,13 @@ body {
     cursor: default;
     
     filter: brightness(50%);
+}
+
+#content-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.boxes{
+    grid-column: span var(--width);
 }
