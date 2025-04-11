@@ -114,3 +114,13 @@ body {
 .boxes{
     grid-column: span var(--width);
 }
+
+.header {
+    margin: 25px;
+    font-size: larger;
+}
+
+.paragraph {
+    margin: 25px;
+    
+}

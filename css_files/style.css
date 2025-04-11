@@ -22,6 +22,8 @@ img{
     object-position: 100% 50%;
     cursor: pointer;
 
+    border-radius: 8px;
+
     &:hover {
      
         filter: brightness(130%);
@@ -52,7 +54,24 @@ img{
     transform: translate(-0%, -50%);
 }
 
+#page-title-box {
+    position: absolute;
+    bottom: 60px; 
+    left: 50%;
 
+    margin-right: -50%;
+    transform: translateX(-40%);
+    max-height: 30px;
+    overflow-y: hidden;
+}
+
+#page-title {
+    text-align: center;
+    color: #fff; 
+    font-size: 20px; 
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif; 
+}
 
 #page-number-box {
     position: absolute;

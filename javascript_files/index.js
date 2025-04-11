@@ -2,6 +2,7 @@
 
 const track = document.getElementById( "image-track" );
 const pageNumber = document.getElementById( "page-number" );
+const pageTitle = document.getElementById( "page-title" );
 
 
 window.addEventListener( "wheel", event => {
@@ -136,6 +137,19 @@ function numberScroll( ) {
     ).onfinish = () => {
         // This function will be called when the animation finishes
         pageNumber.style.transform = `translateY( ${translatePx}px )`;
+    };
+
+    pageTitle.animate(
+        {
+            transform: `translateY( ${translatePx}px )`
+        },
+        {
+            duration: 2000,
+            easing: "ease-out"
+        }
+    ).onfinish = () => {
+        // This function will be called when the animation finishes
+        pageTitle.style.transform = `translateY( ${translatePx}px )`;
     };
 }
 
